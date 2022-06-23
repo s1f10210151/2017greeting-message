@@ -1,3 +1,4 @@
+name  = input(int('名前を入力'))
 from datetime import datetime
 
 def greet():
@@ -5,7 +6,7 @@ def greet():
     if hour <= 11:
         message = 'Good morning'
     elif hour <= 17:
-        message = 'Hello'
+         message = 'Hello, ' + name + '-san!'
     else:
         message = 'Good evening'
     print(message)
